@@ -20,16 +20,7 @@
     "nodecg-bundle"
   ],
   "nodecg": {
-    "compatibleRange": "^1.6.0",
-    "dashboardPanels": [
-      {
-        "name": "status",
-        "title": "Twitch API Status",
-        "width": 2,
-        "file": "status.html",
-        "headerColor": "#564573"
-      }
-    ]
+    "compatibleRange": "^1.6.0"
   },
   "repository": {
     "type": "git",
@@ -48,5 +39,8 @@
   },
   "dependencies": {
     "request-promise": "^3.0.0"
+  },
+  "engines" : {
+    "yarn" : ">= 1.0.0"
   }
 }
