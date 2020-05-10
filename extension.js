@@ -110,7 +110,7 @@ function apiCall(method = 'GET', path = '', qs = {}, body = {}) {
 		method,
 		url: `https://api.twitch.tv/kraken${path}`,
 		headers: {
-			'Accept': 'application/vnd.twitchtv.v3+json',
+			'Accept': 'application/vnd.twitchtv.v5+json',
 			'content-type': 'application/json',
 			'Client-ID': nodecg.config.login.twitch.clientID
 		},
