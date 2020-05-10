@@ -36,8 +36,7 @@ module.exports = function (extensionApi) {
 				provider: user.provider, // should ALWAYS be 'twitch'
 				username: user.username,
 				displayName: user.displayName,
-				logo: user._json.logo,
-				url: user._json._links.self
+				logo: user._json['profile_image_url']
 			};
 			accessToken = user.accessToken;
 		}
@@ -62,8 +61,7 @@ module.exports = function (extensionApi) {
 					provider: user.provider, // should ALWAYS be 'twitch'
 					username: user.username,
 					displayName: user.displayName,
-					logo: user._json.logo,
-					url: user._json._links.self
+					logo: user._json['profile_image_url']
 				};
 				accessToken = user.accessToken;
 				_session = req.session;
